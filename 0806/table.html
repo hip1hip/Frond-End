@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Table Tag</h1>
+  <table border="2" align="center" width="600" cellspacing="0"  cellpadding="10"  />
+    <!-- col graoup 은 세로로 바뀜 , span 은 몇개를 수정할거야 -->
+    <colgroup>  
+    <col span="2" style="background-color: aqua;" />
+    <col style="background-color:magenta "/>
+    </colgroup>
+    <caption align="bottom">7월,9월,10월 수업시간표</caption>
+    <thead>
+      <tr style="background-color: yellow;" height="100">
+        <th width="200">수업날짜</th>
+        <th width="200">과목명</th>
+        <th width="200">비고</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="center" rowspan="3">7, 8, 9 월</td>
+        <td>Core-Java &MySQL</td>
+        <td rowspan="2">JDBC 추가 , ES6 추가</td>
+      </tr>
+      <tr>
+        <td rowspan="1">HTML5, CCS3 JS, React</td>
+        <!-- <td>ES6 추가 </td> -->
+      </tr>
+      <tr>
+        <td>Spring , Spring boot</td>
+        <td bgcolor="green">MyBatos & JPA</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td align="right">합계</td>
+        <td colspan="2" align="center">8과목 , 4과목</td>
+        <!-- <td>4과목</td> -->
+      </tr>
+    </tfoot>
+  </table>
+
+</body>
+</html>

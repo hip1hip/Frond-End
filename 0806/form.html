@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Form Tag</h1>
+  <form action="https://www.naver.com"  method="GET"  name="myfrom" id="myfrom" >
+    <fieldset style="width: 400px">
+      <legend> Basic Info </legend>
+      <p><label for="username">Name : </label><input type="text" size="5" id="username"  value="홍인표" required/></p>
+
+      <p><label for="userage">Age : </label><input type="number" max="60"  id="userage" readonly value="28" /></p>
+      <p><label for="gender">Gender : </label><input type="radio" name="gender" value="male" checked /> 남성 &nbsp;&nbsp; 
+        <input type="radio" name="gender" value="female"/> 여성
+      </p>
+    </fieldset>
+
+    <fieldset>
+      <legend> Business Info </legend>
+      <p><label for="userid">ID : </label><input type="text" size="20" maxlength="12" id="userid" placeholder="Enter Your ID" required /></p>
+      <p><label for="userpwd">Password : </label><input type="password" size="20" maxlength="8"  id="userpwd" required/></p>
+      <p><label for="usertel">Telephone : </label>
+        <select>
+          <option>--선택--</option>
+          <option selected>010</option>
+          <option>011</option>
+          <option>016</option>
+          <option>017</option>
+          <option>018</option>
+          <option>019</option>
+        </select>
+        <input type="tel" size="10"  id="usertel" disabled/></p>
+        <p>
+          <label for="">Your Favorite Browser : </label>
+          <input type="text" list="browser">
+          <datalist id="browser">
+            <option value="chrome"> Google Chrome </option>
+            <option value="ff"> Mozilla Firefox </option>
+            <option value="Safari"> Apple Safari </option>
+            <option value="opera"> Opera opera </option>
+            <option value="edge"> Microsoft Edge </option>
+
+          </datalist>
+        </p>
+
+        <p><label for="">지원날짜</label>
+          <input type="date">
+        </p>
+
+
+        <p><label for="">사진</label>
+          <input type="file">
+        </p>
+
+        <p><label for="">Available Language: </label>
+          <input type="checkbox" name="languge" value="C-lang">C-languge &nbsp; 
+          <input type="checkbox" name="languge" value="Jvav" checked >Java &nbsp; 
+          <input type="checkbox" name="languge" value="Python">Python &nbsp; 
+          <input type="checkbox" name="languge" value="JavaScript">JavaScript &nbsp; 
+          <input type="checkbox" name="languge" value="React">React &nbsp; 
+        </p>
+    </fieldset> 
+    <p>
+      <label for=""> 지원동기 : </label>
+      <textarea name = "" id="" rows="5" cols="40"> 1000자 이내로 작성하시오...</textarea>
+
+    </p>
+
+    <p><input type="submit" value="전송"> &nbsp;&nbsp;&nbsp;
+      <input type="reset" value="취소"> 
+    </p>  
+  </form>
+  <button><a href="/">Home으로 가기</a> </button>
+</body>
+</html>
