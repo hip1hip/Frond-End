@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* a[href] {color: red; } */
+    a[href="http://www.nate.com"] {color:red}
+    /* a[href^= "ftp"] {color:green} 어떤 속성으로 시작되는지 
+    a[href$= "443"] {color:pink} 어떤 속성으로 끝나는지  */
+    a[href*="naver"] {Color: pink}
+  </style>
+</head>
+<body>
+  <h1>Search Engine </h1>
+  <ul>
+    <li><a href="https://www.naver.com:443">Naver</a></li>
+    <li><a href="ftp://www.google.com:21"> Google</a> </li>
+    <li><a href="http://www.nate.com">nate</a></li>
+    <li><a name="daum">Daum</a></li>
+  </ul>
+</body>
+</html>
