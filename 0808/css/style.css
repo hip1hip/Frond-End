@@ -1,0 +1,7 @@
+input[type='number']{
+  background-color: yellow;
+}
+input[type='button']{
+  background-color: rgb(255,0,255);
+  font-size:2em;
+}
