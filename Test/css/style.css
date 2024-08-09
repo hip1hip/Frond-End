@@ -1,0 +1,51 @@
+
+    .container {
+      display: flex;
+      justify-content: flex-start;
+      width: 100%;
+    }
+
+    .fieldset-wrapper {
+      width: 400px;
+      margin-right: 0px;
+      /* 필드셋 사이 간격 조정 */
+    }
+
+    .wrong {
+      border: 2px solid red;
+      background-color: red;
+      color: white;
+    }
+
+    .highlight {
+      color: red;
+      font-weight: bold;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .box {
+      width: 350px;
+      height: 23rem;
+      
+    }
+
+    .button-wrapper {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .head {
+      font-size: 25px;
+    }
+
+  .question{
+    float: right;
+    
+  }
+  .question[type="text"]{
+    width: 70px
+  }
