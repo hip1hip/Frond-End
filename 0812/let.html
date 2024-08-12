@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    //ES5
+    // (function () {    //실행함수 
+    //   var a = 100;
+    //   switch (a) {
+    //     case 100:
+    //       var a = 200;
+    //       break;
+
+    //   }
+    //   console.log(a);  //200  //var 는 스위치 안에 만들어지면 지역변수가 아님 
+    // })();  
+
+    //ES6
+    (function () {    //실행함수 
+      let a = 100;
+      switch (a) {
+        case 100:
+          let a = 200;
+          break;
+
+      }
+      console.log(a);  //100  //let 은 스위치 안에 만들어진건 지역변수라고 함 
+    })(); 
+  </script>
+</body>
+
+</html>

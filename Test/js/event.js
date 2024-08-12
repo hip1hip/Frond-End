@@ -56,6 +56,6 @@ function init() {
     result.innerHTML = `${name}님의 ${today} 계산 퀴즈 결과 <br>총 5문제 중 ${incorrectCount}문제를 틀렸습니다.<br><br>틀린 답은 빨간색으로 표시하겠습니다.<br><br>최종 점수는 <span class="highlight">${score}점</span>입니다.`;
 
     document.getElementById('resultBox').classList.remove('hidden');
-    document.getElementById('quizFieldset').classList.add('hidden');
+    // document.getElementById('quizFieldset').classList.add('hidden');
   });
 }
